@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.input.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="768" prefWidth="1366" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FXMLPrincipalController">
+   <children>
+      <SplitPane dividerPositions="0.18199608610567514" layoutX="10.0" layoutY="35.0" prefHeight="745.0" prefWidth="1024.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Accordion layoutX="4.0" prefHeight="743.0" prefWidth="183.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <panes>
+                        <TitledPane animated="false" text="Transacciones">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                           </content>
+                        </TitledPane>
+                        <TitledPane animated="false" text="Pacientes">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ListView fx:id="lvmaster" layoutX="13.6" layoutY="2.5999999999999996" prefHeight="650.0" prefWidth="257.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-0.0" AnchorPane.topAnchor="0.0" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </TitledPane>
+                        <TitledPane animated="false" text="Informes">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                           </content>
+                        </TitledPane>
+                        <TitledPane prefHeight="200.0" prefWidth="200.0" text="Configuración" />
+                     </panes>
+                  </Accordion>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="780.0" prefWidth="900.0">
+               <children>
+                  <TabPane fx:id="tbpane" prefHeight="780.0" prefWidth="900.0" tabClosingPolicy="ALL_TABS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+      <MenuBar layoutX="10.0" layoutY="14.0" prefHeight="25.0" prefWidth="1124.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Pacientes">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Nuevos pacientes..." />
+                  <MenuItem text="_Pacientes...">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="P" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" text="Citas..." />
+                  <MenuItem mnemonicParsing="false" text="Agenda..." />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Transacciones">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Registrar transacciones..." />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Informes">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Informes del sistema..." />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Configuración">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Parámetros..." />
+                  <MenuItem mnemonicParsing="false" text="Doctores..." />
+                  <MenuItem mnemonicParsing="false" text="Aseguradoras..." />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Salir">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Action 1" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
